@@ -1,0 +1,13 @@
+nav.no-navbar-margin { margin: 0; }
+
+.custom-main-container .custom-index-img-container { position: relative; background-image: url(../images/index-bg.jpg); height: 680px; background-repeat: no-repeat; background-position: 50% top; background-color: black; }
+
+.custom-main-container .custom-index-img-container .custom-index-img-caption { position: absolute; left: 50%; top: 160px; color: white; margin-left: -360px; text-align: right; }
+
+.custom-main-container .custom-index-img-container .custom-index-img-caption .custom-caption-top { font-size: 20px; margin-bottom: 0; }
+
+.custom-main-container .custom-index-img-container .custom-index-img-caption .custom-caption-top strong { font-size: 25px; }
+
+.custom-main-container .custom-index-img-container .custom-index-img-caption .custom-caption-bottom { font-size: 32px; }
+
+/*# sourceMappingURL=index.compact.css.map */
