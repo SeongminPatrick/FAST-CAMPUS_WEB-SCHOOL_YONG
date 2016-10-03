@@ -1,0 +1,85 @@
+nav.navbar-no-margin
+  margin-bottom: 0
+
+nav.navbar-color-change
+  background-color: white
+  .container-fluid
+    .navbar-header
+      .navbar-brand-height-change
+        height: 100px
+    .navbar-vertical-align
+      position: relative
+      top: 25px
+
+div.container-add-padding //cantainer의 default padding값을 수정
+  padding-left: 30px
+  padding-right: 30px
+  div.index-button-container
+    padding: 25px
+    div.col-xs-3
+      button.custom-btn1 //앞 2개 버튼
+        border: 2px solid black
+        border-radius: 0
+        font-size: 14px
+        background-color: black
+        color: white
+      button.custom-btn2 //뒤 2개 버튼
+        border: 2px solid black
+        border-radius: 0
+        font-size: 14px
+        &:hover
+          background-color: black
+          color: white
+  div.section_title_container
+    position: relative
+    line-height: 22px
+    margin-bottom: 20px
+    margin-top: 20px
+    span.sep_title
+      position: absolute
+      left: 0
+      top: 0
+      padding-right: 5px
+      display: inline-block
+      background-color: white
+      font-size: 18px
+    div.divider
+      display: inline-block
+      width: 100%
+      height: 1px
+      vertical-align: middle
+      background-color: black
+  div.course_wrapper
+    margin-top: 40px
+    margin-bottom: 40px
+    div.col-md-3
+      padding: 15px
+      text-align: center
+      img
+        max-width: 100% //이미지의 크기를 상위 div에 맞춰주기 위해 적용
+        max-height: 100%
+  div.contact_info
+    div.col-md-3
+      div.map_wrapper
+        border: 1px solid black
+        padding: 12px
+  div.newsletter_wrapper
+    margin-bottom: 30px
+    div.input_wrapper
+      padding-left: 20px
+      margin-top: 30px
+      input.form-control
+        width: 350px
+        margin-bottom: 15px
+      button.btn-custom
+        background-color: #ccc
+        color: white
+        width: 200px
+div.footer_wrapper
+  padding-top: 30px
+  background-color: rgb(61, 64, 69)
+  div.col-md-3
+    p
+      color: rgb(128, 128, 128)
+      strong
+        color: white
