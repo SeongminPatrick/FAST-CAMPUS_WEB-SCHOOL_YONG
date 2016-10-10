@@ -22,7 +22,7 @@ FAST-CAMPUS_WEB
 - [Day08. 파이썬 기본 문법](https://github.com/YongPilMoon/FAST-CAMPUS_WEB-SCHOOL_YONG/blob/master/DailyStudy/PYTHON/20160919_Python_Day8/Day8_python_basic_grammer.md)
 - [Day08. 파이썬 개발 환경 세팅](https://github.com/YongPilMoon/FAST-CAMPUS_WEB-SCHOOL_YONG/blob/master/DailyStudy/PYTHON/20160919_Python_Day8/Day8_python_development_setting.md)
 - [Day09. Lammda and List comprehension](https://github.com/YongPilMoon/FAST-CAMPUS_WEB-SCHOOL_YONG/blob/master/DailyStudy/PYTHON/20160920_Python_Day9/Day9_lambda_operator_list_comprehension.md)
-- [Day10. decoration](hhttps://github.com/YongPilMoon/FAST-CAMPUS_WEB-SCHOOL_YONG/blob/master/DailyStudy/PYTHON/20160921_Python_Day10/Day10_decorator.md)
+- [Day10. decoration](https://github.com/YongPilMoon/FAST-CAMPUS_WEB-SCHOOL_YONG/blob/master/DailyStudy/PYTHON/20160921_Python_Day10/Day10_decorator.md)
 - [Day10. recursive function](https://github.com/YongPilMoon/FAST-CAMPUS_WEB-SCHOOL_YONG/blob/master/DailyStudy/PYTHON/20160921_Python_Day10/Day10_recursive_function_and_class.md)
 - [Day11. class](https://github.com/YongPilMoon/FAST-CAMPUS_WEB-SCHOOL_YONG/blob/master/DailyStudy/PYTHON/20160922_Python_Day11/day_11_class.md)
 - [Day12. 크롤링](https://github.com/YongPilMoon/FAST-CAMPUS_WEB-SCHOOL_YONG/blob/master/DailyStudy/PYTHON/20160923_Python_Day12/Day12_crawling.md)
