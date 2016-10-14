@@ -21,10 +21,18 @@ FAST-CAMPUS_WEB
 >   **Unit1. Python**
 - [Day08. 파이썬 기본 문법](https://github.com/YongPilMoon/FAST-CAMPUS_WEB-SCHOOL_YONG/blob/master/DailyStudy/PYTHON/20160919_Python_Day8/Day8_python_basic_grammer.md)
 - [Day08. 파이썬 개발 환경 세팅](https://github.com/YongPilMoon/FAST-CAMPUS_WEB-SCHOOL_YONG/blob/master/DailyStudy/PYTHON/20160919_Python_Day8/Day8_python_development_setting.md)
-- [Day09. Lammda and List comprehension](https://github.com/YongPilMoon/FAST-CAMPUS_WEB-SCHOOL_YONG/blob/master/DailyStudy/PYTHON/20160920_Python_Day9/Day9_lambda_operator_list_comprehension.md)
-- [Day10. decoration](https://github.com/YongPilMoon/FAST-CAMPUS_WEB-SCHOOL_YONG/blob/master/DailyStudy/PYTHON/20160921_Python_Day10/Day10_decorator.md)
-- [Day10. recursive function](https://github.com/YongPilMoon/FAST-CAMPUS_WEB-SCHOOL_YONG/blob/master/DailyStudy/PYTHON/20160921_Python_Day10/Day10_recursive_function_and_class.md)
-- [Day11. class](https://github.com/YongPilMoon/FAST-CAMPUS_WEB-SCHOOL_YONG/blob/master/DailyStudy/PYTHON/20160922_Python_Day11/day_11_class.md)
-- [Day12. 크롤링](https://github.com/YongPilMoon/FAST-CAMPUS_WEB-SCHOOL_YONG/blob/master/DailyStudy/PYTHON/20160923_Python_Day12/Day12_crawling.md)
-- [Day12. iterator and generator](https://github.com/YongPilMoon/FAST-CAMPUS_WEB-SCHOOL_YONG/blob/master/DailyStudy/PYTHON/20160923_Python_Day12/Day12_iterator_and_generator.md)
+- [Day09. Lammda and list comprehension](https://github.com/YongPilMoon/FAST-CAMPUS_WEB-SCHOOL_YONG/blob/master/DailyStudy/PYTHON/20160920_Python_Day9/Day9_lambda_operator_list_comprehension.md)
+- [Day10. Decoration](https://github.com/YongPilMoon/FAST-CAMPUS_WEB-SCHOOL_YONG/blob/master/DailyStudy/PYTHON/20160921_Python_Day10/Day10_decorator.md)
+- [Day10. Recursive function](https://github.com/YongPilMoon/FAST-CAMPUS_WEB-SCHOOL_YONG/blob/master/DailyStudy/PYTHON/20160921_Python_Day10/Day10_recursive_function_and_class.md)
+- [Day11. Class](https://github.com/YongPilMoon/FAST-CAMPUS_WEB-SCHOOL_YONG/blob/master/DailyStudy/PYTHON/20160922_Python_Day11/day_11_class.md)
+- [Day12. Crawling](https://github.com/YongPilMoon/FAST-CAMPUS_WEB-SCHOOL_YONG/blob/master/DailyStudy/PYTHON/20160923_Python_Day12/Day12_crawling.md)
+- [Day12. Iterator and generator](https://github.com/YongPilMoon/FAST-CAMPUS_WEB-SCHOOL_YONG/blob/master/DailyStudy/PYTHON/20160923_Python_Day12/Day12_iterator_and_generator.md)
 
+<br>
+>   **Unit3. Django Documents**
+- [Model](https://github.com/YongPilMoon/FAST-CAMPUS_WEB-SCHOOL_YONG/blob/master/DailyStudy/DJANGO/django_document/Model.md)
+- [Form](https://github.com/YongPilMoon/FAST-CAMPUS_WEB-SCHOOL_YONG/blob/master/DailyStudy/DJANGO/django_document/Form.md)
+- [ModelForm](https://github.com/YongPilMoon/FAST-CAMPUS_WEB-SCHOOL_YONG/blob/master/DailyStudy/DJANGO/django_document/ModelForm.md)
+- [Queryset](https://github.com/YongPilMoon/FAST-CAMPUS_WEB-SCHOOL_YONG/blob/master/DailyStudy/DJANGO/django_document/Queryset.md)
+- [Django Authentication System](https://github.com/YongPilMoon/FAST-CAMPUS_WEB-SCHOOL_YONG/blob/master/DailyStudy/DJANGO/django_document/Django%20Authentication%20System.md)
+- [Custom Model User](https://github.com/YongPilMoon/FAST-CAMPUS_WEB-SCHOOL_YONG/blob/master/DailyStudy/DJANGO/django_document/CustomModelUser.md)
