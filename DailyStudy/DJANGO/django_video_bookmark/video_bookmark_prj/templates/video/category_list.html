@@ -1,0 +1,22 @@
+{% extends 'common/base.html' %}
+
+{% block content %}
+
+<h2>CHOICE CATEGORY</h2>
+{% for category in categories %}
+<p>
+  <a href="{% url 'video:video_list' pk=category.pk %}">{{ category }}</a>
+  <a href="{% url 'video:category_edit' pk=category.pk %}">
+    <span class="glyphicon glyphicon-edit"></span>
+  </a>
+  <a href="{% url 'video:category_delete' pk=category.pk %}">
+    <span class="glyphicon glyphicon-remove"></span>
+  </a>
+</p>
+{% endfor %}
+<form action="" method="POST">
+  {% csrf_token %}
+  {{ form.as_p}}
+  <button type="summit">Add Category</button>
+</form>
+{% endblock %}

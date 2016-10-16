@@ -1,0 +1,16 @@
+{% extends 'common/base.html' %}
+
+{% block content %}
+<div class="video">
+  <h4>{{video.title}}</h4>
+  <div>
+    <p>like_count : {{ video.like_count }}
+      <a href="{% url 'video:video_like' pk=video.pk %}">
+        <span class="glyphicon glyphicon-thumbs-up"></span>
+      </a>
+    </p>
+    <p>view_count : {{ video.view_count }}</p>
+    <p>category : {{ video.category }}</p>
+    <a href="{{ video.address }}">LINK</a>
+</div>
+{% endblock content %}
