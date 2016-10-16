@@ -1,6 +1,6 @@
 # Django_document_Model2
 
-#### Model 상속
+### 1. Model 상속
 
 ```python
 
@@ -18,7 +18,7 @@ class Student(Person):
 - Student객체를 만드려면 Student.objects.create(first_name="용필", last_name="문", year=4) 다음과 같이 입력한다.
 - Meta속성도 자동으로 상속되며 상속된 성질을 다시 돌려주기 위해서는 다시 정의해 주어야한다. ex) ordering = [ ]
 
-#### Abstract class
+### 2. Abstract class
 ```python
 
 class CommonInfo(models.Model):
@@ -37,7 +37,7 @@ class Student(CommonInfo):
 - CommonInfo 객체를 생성하려하면 오류가 발생한다.
 - 상속과 마찬가지고 Meta속성도 상속되지만 abstract는 상속되지 않는다.
 
-#### Multiple 상속
+### 3. Multiple Model 상속
 ```python
 class Article(models.Model):
     article_id = models.AutoField(primary_key=True)
@@ -52,7 +52,7 @@ class BookReview(Book, Article):
 ```
 - 상속과 유사하지만 BookReview테이블에서 pk값을 구분하기 위해 Article과 Book 클래스에서 pk값을 특정 이름으로 지정해 주어야한다.
 
-####Symmetrical
+### 4. Symmetrical 요소
 ```python
 class Person(models.Model):
     name = models.CharField(max_length=100)
@@ -75,12 +75,14 @@ class Relationship(models.Model):
 - many to many 관계에서 자기자신과 관계를 갖는 클래스를 생성할때는 symmetrical=False로 해주어야 한다.
 - 주로 following과 follower 관계를 나타 낼때 사용된다.
 
-#### 상속 vs abstract
+### 5. 상속 vs abstract
 - 부모클래스로 부터 참조하여 사용해야할 경우가 있는 경우 상속을 사용하고 자식 모델만 사용할 경우 abstract를 사용
 
-#### proxy
+### 6. proxy
 - 상속받은 모델과 같은 테이블을 사용하지만 ordering과 같은 Meta 속성이나 다른 함수들을 추가하여 새로운 클래스를 만들어 사용하고 싶을 때 사용한다.
+
 
 #### DateTimeField
 - auto_now_add : 처음 생성될때의 날짜 기록
 - auto_add : 생성된 후 저장될때마다 변경
+
