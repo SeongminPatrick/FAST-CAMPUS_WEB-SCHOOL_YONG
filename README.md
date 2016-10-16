@@ -31,8 +31,7 @@ FAST-CAMPUS_WEB
 <br>
 >   **Unit3. Django Documents**
 - [Model](https://github.com/YongPilMoon/FAST-CAMPUS_WEB-SCHOOL_YONG/blob/master/DailyStudy/DJANGO/django_document/Model.md)
-- [Form](https://github.com/YongPilMoon/FAST-CAMPUS_WEB-SCHOOL_YONG/blob/master/DailyStudy/DJANGO/django_document/Form.md)
-- [ModelForm](https://github.com/YongPilMoon/FAST-CAMPUS_WEB-SCHOOL_YONG/blob/master/DailyStudy/DJANGO/django_document/ModelForm.md)
+- [FormAndModelForm](https://github.com/YongPilMoon/FAST-CAMPUS_WEB-SCHOOL_YONG/blob/master/DailyStudy/DJANGO/django_document/FormAndModelForm.md)
 - [Queryset](https://github.com/YongPilMoon/FAST-CAMPUS_WEB-SCHOOL_YONG/blob/master/DailyStudy/DJANGO/django_document/Queryset.md)
 - [Django Authentication System](https://github.com/YongPilMoon/FAST-CAMPUS_WEB-SCHOOL_YONG/blob/master/DailyStudy/DJANGO/django_document/Django%20Authentication%20System.md)
 - [Custom Model User](https://github.com/YongPilMoon/FAST-CAMPUS_WEB-SCHOOL_YONG/blob/master/DailyStudy/DJANGO/django_document/CustomModelUser.md)
