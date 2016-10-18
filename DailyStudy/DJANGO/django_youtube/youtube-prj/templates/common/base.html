@@ -1,0 +1,42 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>YouTube BookMark</title>
+
+  <!-- https://tutorial.djangogirls.org/ko/css/ -->
+  <link rel="stylesheet" hrsef="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/search.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{% static 'css/common.min.css' %}">
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- a.navbar-brand [tab] -->
+        <a href="{% url 'video:search' %}" class="navbar-brand">YouTube</a>
+      </div>
+
+      <!-- div.collapse.navbar-collapse#main-navbar [tab] -->
+      <div class="collapse navbar-collapse" id="main-navbar">
+        <!-- ul.nav.navbar-nav.navbar-right [tab] -->
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="{% url 'video:list' %}">
+              <span class="glyphicon glyphicon-film"></span> BookMark List
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  {% block content %}
+  {% endblock %}
+</body>
+</html>

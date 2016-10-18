@@ -1,0 +1,51 @@
+{% extends 'common/base.html' %}
+
+{% block content %}
+{% load app_filters %}
+
+<form action="">
+<div class="input-group container">
+    <span class="input-group-addon" id="basic-addon1">@</span>
+    <input class="form-control" placeholder="Search" aria-describedby="basic-addon1" type="text" name="keyword">
+</div>
+</form>
+<div class="add-top-margin"></div>
+<div class="container">
+    {% for item in response.items %}
+      <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ item.id.videoId}}" frameborder="0" allowfullscreen>
+      </iframe> -->
+      <div class="row">
+        <div class="col-md-4">
+          <img class="img-responsive thumbnail" src="{{ item.snippet.thumbnails.medium.url }}" alt="">
+        </div>
+
+        <div class="col-md-8">
+          <h4>{{ forloop.counter }}. {{ item.snippet.title }}</h4>
+          <p>내용: {{ item.snippet.description }}</p>
+          <p>게시일: {{ item.snippet.publishedAt|string_to_date|date:"Y.m.d h:i" }}</p>
+          <form action="{% url 'video:add' %}?next={{ request.path }}?keyword={{ keyword }}" method="POST"> {% csrf_token %}
+            <input type="hidden" name="kind" value="{{ item.kind }}">
+            <input type="hidden" name="youtube_id" value="{{ item.id.videoId }}">
+            <input type="hidden" name="title" value="{{ item.snippet.title }}">
+            <input type="hidden" name="description" value="{{ item.snippet.description }}">
+            <input type="hidden" name="published_date" value="{{ item.snippet.publishedAt }}">
+            <input type="hidden" name="thumbnail" value="{{ item.snippet.thumbnails.default.url }}">
+            <button type="input"><span class="glyphicon glyphicon-heart"></span></button>
+          </form>
+        </div>
+      </div>
+    {% endfor %}
+
+    {% if response.prevPageToken %}
+      <a href="{% url 'video:search' %}?keyword={{ keyword }}&page_token={{ response.prePageToken }}">이전 페이지</a>
+    {% endif %}
+
+		{% if response.prevPageToken %}
+		<a href="{% url 'video:search' %}?keyword={{ keyword }}">첫 페이지로가기</a>
+		{% endif %}
+
+    {% if response.nextPageToken %}
+      <a href="{% url 'video:search' %}?keyword={{ keyword }}&page_token={{ response.nextPageToken }}">다음 페이지</a>
+    {% endif %}
+	{% endblock %}
+</div>
