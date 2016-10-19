@@ -10,6 +10,8 @@ class Video(models.Model):
     published_date = models.DateTimeField()
     registered_date = models.DateTimeField(auto_now_add=True)
     thumbnail = models.URLField(blank=True)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL)
+
     class Meta:
         ordering = ['-registered_date']
 
