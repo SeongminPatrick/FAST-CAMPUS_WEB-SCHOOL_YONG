@@ -1,5 +1,4 @@
 from django.shortcuts import render, redirect
-from django.http import HttpResponse
 from django.contrib import messages
 from video.models import Video
 from django.contrib.auth.decorators import login_required
@@ -11,6 +10,7 @@ __all__ = [
     'bookmark_delete',
 ]
 
+
 @login_required
 def bookmark_add(request):
     path = request.POST.get('path')
@@ -21,14 +21,15 @@ def bookmark_add(request):
         description = request.POST['description']
         published_date = request.POST['published_date']
         thumbnail_url = request.POST['thumbnail_url']
-
+        user = request.user
         video = Video.objects.create(
             kind=kind,
             youtube_id=video_id,
             title=title,
             description=description,
             published_date=published_date,
-            thumbnail=thumbnail_url
+            thumbnail=thumbnail_url,
+            user=user
         )
         msg = '%s 영상을 북마크에 등록했습니다' % (
             video.title
@@ -42,6 +43,7 @@ def bookmark_add(request):
     else:
         return redirect('video:bookmark_list')
 
+
 @login_required
 def bookmark_list(request):
     """
@@ -53,6 +55,7 @@ def bookmark_list(request):
         'videos': videos,
     }
     return render(request, 'video/bookmark_list.html', context)
+
 
 @login_required
 def bookmark_detail(request, pk):
@@ -67,6 +70,7 @@ def bookmark_detail(request, pk):
         'video': video
     }
     return render(request, 'video/bookmark_detail.html', context)
+
 
 @login_required
 def bookmark_delete(request, pk):
