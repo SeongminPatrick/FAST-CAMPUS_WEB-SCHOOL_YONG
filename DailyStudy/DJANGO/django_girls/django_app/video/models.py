@@ -1,5 +1,6 @@
 from django.db import models
 from django.conf import settings
+from member.models import MyUser
 
 
 class Video(models.Model):
@@ -10,6 +11,8 @@ class Video(models.Model):
     published_date = models.DateTimeField()
     registered_date = models.DateTimeField(auto_now_add=True)
     thumbnail = models.URLField(blank=True)
+    users = models.ManyToManyField(MyUser)
+
     class Meta:
         ordering = ['-registered_date']
 

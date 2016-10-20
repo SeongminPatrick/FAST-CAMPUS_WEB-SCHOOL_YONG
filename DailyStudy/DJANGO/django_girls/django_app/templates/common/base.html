@@ -39,14 +39,14 @@
             </a>
           </li>
           <li>
+            <a href="{% url 'member:logout' %}">Logout</a>
+          </li>
+          {% else %}
+          <li>
             <a href="{% url 'member:signup3' %}?next={{ request.path }}">
               <span> SignUp</span>
             </a>
           </li>
-          <li>
-            <a href="{% url 'member:logout' %}">Logout</a>
-          </li>
-          {% else %}
           <li>
             <a href="{% url 'member:login' %}?next={{ request.path }}">Login</a>
           </li>
