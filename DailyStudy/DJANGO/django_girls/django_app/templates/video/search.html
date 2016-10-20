@@ -55,10 +55,10 @@
 							<input type="hidden" name="published_date" value="{{ item.snippet.publishedAt}}">
 							<input type="hidden" name="thumbnail_url" value="{{ item.snippet.thumbnails.high.url }}">
 							<input type="hidden" name="path" value="{{request.get_full_path}}">
-							<button type="submit">Add bookmark</button>
+							<button type="submit" class="btn btn-xs btn-default">Add bookmark</button>
 						</form>
 						{% else %}
-							<button type="submit already-bookmarked" disabled="disabled">Already bookmarked</button>
+							<span  class="btn btn-xs btn-warning" disabled="disabled">Already bookmarked</span>
 						{% endif %}
 					</div>
 				</div>
