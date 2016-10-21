@@ -23,6 +23,13 @@ STATICFILES_DIRS = [
     STATIC_DIR,
 ]
 
+# Auth
+AUTH_USER_MODEL = 'member.MyUser'
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'member.backends.FacebookBackend',
+]
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 AUTH_USER_MODEL = 'member.MyUser'
@@ -32,6 +39,10 @@ SECRET_KEY = '3j%5g92-aaj4t(xy0uc8x%i=^)v1c_vrwq&$je=3kd%-!2^6=b'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+
+# Facebook
+FACEBOOK_APP_ID = '681227818707260'
+FACEBOOK_SECRET_CODE = '5c46a36c120d204a3837739dc8d15918'
 
 ALLOWED_HOSTS = []
 LOGIN_URL = '/member/login/'
@@ -43,7 +54,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.humanize',
-    
+
     'blog',
     'member',
     'video',

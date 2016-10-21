@@ -47,6 +47,18 @@ class MyUserManager(BaseUserManager):
         user.save()
         return user
 
+    def create_facebook_user(self, user_info):
+        user = self.model(
+            email=user_info['email'],
+            last_name=user_info.get('last_name',''),
+            first_name=user_info.get('first_name',''),
+            is_facebook_user=True,
+            facebook_id=user_info['id'],
+            img_profile_url=user_info['picture']['data']['url'],
+        )
+        user.save()
+        return user
+
 
 class MyUser(AbstractBaseUser, PermissionsMixin):
     email = models.EmailField(max_length=100, unique=True)
@@ -56,6 +68,10 @@ class MyUser(AbstractBaseUser, PermissionsMixin):
     date_joined = models.DateTimeField(auto_now_add=True, unique=True)
     is_staff = models.BooleanField(default=False)
 
+    # Facebook User
+    is_facebook_user = models.BooleanField(default=False)
+    facebook_id = models.CharField(max_length=200, blank=True)
+    img_profile_url = models.URLField(blank=True)
 
     # 규약:  username 대신 인증을 위해 사용할 다른 식별자 지정
     USERNAME_FIELD = 'email'

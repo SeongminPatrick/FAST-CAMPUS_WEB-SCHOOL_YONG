@@ -1,0 +1,9 @@
+{% extends 'common/base.html' %}
+{% block content %}
+    {% for data in custom_data %}
+        <p>랭킹 {{ forloop.counter }}</p>
+        <p>이름 : {{ data.name }}</p>
+        <p>댓글 개수 : {{ data.cnt }}</p>
+
+    {% endfor %}
+{% endblock %}
