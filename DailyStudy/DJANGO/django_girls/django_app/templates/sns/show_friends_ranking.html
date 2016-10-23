@@ -1,0 +1,10 @@
+{% extends 'common/base.html' %}
+
+{% block content %}
+    {% for friend in friends %}
+        <div>
+        <img src="{{friend.picture_url}}" alt="">
+        <p>{{forloop.counter}}등 {{friend.name}}, 댓글 갯수: {{friend.comment_count}}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
